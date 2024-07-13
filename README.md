@@ -12,6 +12,8 @@ docker run -itd   --name telegram-media-downloader
 taorperson/telegram_media_downloader:latest
 ```
 
+unraid和群晖，需要手动先执行以上代码输入手机完成验证后，再运行正式配置的容器
+
 ## windows版本
 直接git本代码后，编译运行即可
 
