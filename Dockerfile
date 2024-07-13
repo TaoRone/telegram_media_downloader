@@ -1,4 +1,4 @@
-FROM python:3.11.2-alpine As compile-image
+FROM python:3.11.2-alpine AS compile-image
 
 WORKDIR /app
 
@@ -13,13 +13,13 @@ RUN apk add --no-cache --virtual .build-deps gcc g++ cmake make musl-dev \
 
 RUN apk add --no-cache rclone
 
-FROM python:3.11.2-alpine As runtime-image
+FROM python:3.11.2-alpine AS runtime-image
 
 WORKDIR /app
 
 COPY --from=tangyoha/telegram_media_downloader_compile /usr/bin/rclone /app/rclone/rclone
 
-COPY --from=tangyoha/telegram_media_downloader_compile /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+COPY site-packages /usr/local/lib/python3.11/site-packages
 
 
 RUN apk add --no-cache openblas-dev  ffmpeg

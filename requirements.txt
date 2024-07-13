@@ -1,15 +1,15 @@
 #https://github.com/tangyoha/pyrogram/archive/refs/tags/v2.0.69.zip
 #pyrogram==2.0.106
 https://github.com/tangyoha/pyrogram/archive/refs/heads/master_v2.0.69_1.zip
-PyYAML==5.3.1
-rich==12.5.1
-TgCrypto==1.2.5
-loguru==0.6.0
-# aligo==5.4.0
-Werkzeug==2.2.2
-flask==2.2.2
-ply==3.11
-ruamel.yaml==0.17.21
-flask-login==0.6.2
-pycryptodome==3.18.0
-moviepy==1.0.3
+PyYAML
+rich
+TgCrypto
+loguru
+# aligo
+Werkzeug
+flask
+ply
+ruamel.yaml
+flask-login
+pycryptodome
+moviepy
